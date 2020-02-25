@@ -1,6 +1,6 @@
 
 $(function() {
-	var pluginName = 'spam-be-gone';
+	var pluginName = 'spam-be-gone-cn';
 	var readyTimeoutId = null;
 
 	function onRecaptachaArgsReady (callback) {
@@ -108,7 +108,7 @@ $(function() {
 });
 
 window.__nodebbSpamBeGoneCreateCaptcha__ = function () {
-	var args = plugin['spam-be-gone'].recaptchaArgs;
+	var args = plugin[pluginName].recaptchaArgs;
 
 	grecaptcha.render(
 		args.targetId,
