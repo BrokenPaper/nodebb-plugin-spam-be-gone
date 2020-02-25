@@ -25,19 +25,19 @@
                <input placeholder="输入 Akismet API Key" type="text" class="form-control" id="akismetApiKey" name="akismetApiKey"/>
             </div>
             <div class="form-group">
-               <label for="akismetMinReputationHam">HAM Minimum Reputation</label>
+               <label for="akismetMinReputationHam">HAM 最小所需声望</label>
                <input placeholder="10" type="number" class="form-control" id="akismetMinReputationHam" name="akismetMinReputationHam"/>
             </div>
             <p class="help-block">最小的声望等级去界定被标记的帖子是误报的 (HAM). 声望不少于这个等级的用户发布的帖子永远不会被标记为垃圾信息.</p>
             <div class="form-group">
-               <label for="akismetFlagReporting">Flagging Minimum Reputation</label>
+               <label for="akismetFlagReporting">标记最小所需声望</label>
                <input placeholder="5" type="text" class="form-control" id="akismetFlagReporting" name="akismetFlagReporting"/>
             </div>
             <p class="help-block">允许用户通过标记向Akismet报告垃圾帖子所需要的最小声望值 (留空关闭)</p>
             <hr />
             <div class="checkbox">
                <label class="section-title">
-               <input data-toggle-target="#honeypotApiKey" type="checkbox" id="honeypotEnabled" name="honeypotEnabled"/> Enable Honeypot
+               <input data-toggle-target="#honeypotApiKey" type="checkbox" id="honeypotEnabled" name="honeypotEnabled"/>启用 Honeypot
                </label>
             </div>
             <p class="help-block">要检查用户的每一次注册. 从
@@ -59,11 +59,11 @@
             <div class="form-inline">
                <div class="form-group" style="width:45%;">
                   <label for="recaptchaPublicKey">Re-Captcha 公钥</label>
-                  <input placeholder="Public API Key here" type="text" class="recaptchaKey form-control" id="recaptchaPublicKey" name="recaptchaPublicKey"/>
+                  <input placeholder="这里输入公钥" type="text" class="recaptchaKey form-control" id="recaptchaPublicKey" name="recaptchaPublicKey"/>
                </div>
                <div class="form-group" style="width:45%;">
                   <label for="recaptchaPrivateKey">Re-Captcha 私钥</label>
-                  <input placeholder="Private (Secret) API Key here" type="text" class="recaptchaKey form-control" id="recaptchaPrivateKey" name="recaptchaPrivateKey"/>
+                  <input placeholder="这里输入私钥" type="text" class="recaptchaKey form-control" id="recaptchaPrivateKey" name="recaptchaPrivateKey"/>
                </div>
             </div>
             <p class="help-block">
@@ -85,8 +85,8 @@
                要举报用户你需要 API key, 从 <a target="_blank" href="https://www.stopforumspam.com/keys">stopforumspam.com/keys</a> 获得
             </p>
             <div class="form-group" style="width:45%;">
-               <label for="stopforumspamApiKey">输入 StopForumSpam API</label>
-               <input placeholder="API key here" type="text" class="stopforumspamApiKey form-control" id="stopforumspamApiKey" name="stopforumspamApiKey"/>
+               <label for="stopforumspamApiKey">输入 StopForumSpam API Key</label>
+               <input placeholder="输入API key" type="text" class="stopforumspamApiKey form-control" id="stopforumspamApiKey" name="stopforumspamApiKey"/>
             </div>
          </div>
       </div>
