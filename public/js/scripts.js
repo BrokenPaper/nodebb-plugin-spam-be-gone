@@ -108,7 +108,7 @@ $(function() {
 });
 
 window.__nodebbSpamBeGoneCreateCaptcha__ = function () {
-	var args = plugin[pluginName].recaptchaArgs;
+	var args = plugin['spam-be-gone-cn'].recaptchaArgs;
 
 	grecaptcha.render(
 		args.targetId,
