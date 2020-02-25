@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-spam-be-gone-cn",
-  "version": "0.6.8",
+  "version": "0.6.9",
   "description": "同时使用 Akismet.com, StopForumSpam.com 和 Re-Captcha 阻止垃圾邮件",
   "main": "index.js",
   "scripts": {
