@@ -1,0 +1,9 @@
+{
+  "report-user": "举报垃圾广告",
+  "something-went-wrong": "发生了一些错误",
+  "not-allowed": "你不允许执行这个动作",
+  "cant-report-admin": "你不能举报管理员",
+  "user-reported": "用户举报成功!",
+  "sfs-not-enabled": "Stop Forum Spam 没有启用",
+  "sfs-api-key-not-set": "Stop Forum Spam API Key 没有设置, 从 stopforumspam.com/keys 获得一个"
+}

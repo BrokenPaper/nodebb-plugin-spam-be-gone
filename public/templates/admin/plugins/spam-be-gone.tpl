@@ -14,65 +14,65 @@
             <div class="checkbox">
                <label class="section-title">
                <input data-toggle-target="#akismetApiKey,#akismetMinReputationHam,#akismetFlagReporting" type="checkbox" id="akismetEnabled" name="akismetEnabled"/>
-               Enable Akismet
+               启用 Akismet
                </label>
             </div>
-            <p class="help-block">To check every user post. Get yours from
-               <a target="_blank" href="http://akismet.com/">akismet.com</a>
+            <p class="help-block">要检查每个用户的发帖. 从
+               <a target="_blank" href="http://akismet.com/">akismet.com</a> 获得你的API
             </p>
             <div class="form-group">
                <label for="akismetApiKey">Akismet API Key</label>
-               <input placeholder="Akismet API Key here" type="text" class="form-control" id="akismetApiKey" name="akismetApiKey"/>
+               <input placeholder="输入 Akismet API Key" type="text" class="form-control" id="akismetApiKey" name="akismetApiKey"/>
             </div>
             <div class="form-group">
                <label for="akismetMinReputationHam">HAM Minimum Reputation</label>
                <input placeholder="10" type="number" class="form-control" id="akismetMinReputationHam" name="akismetMinReputationHam"/>
             </div>
-            <p class="help-block">Minimum reputation level to classify flagged posts as false positives (HAM). Posts made by users with at least this level reputation will never be flagged as spam.</p>
+            <p class="help-block">最小的声望等级去界定被标记的帖子是误报的 (HAM). 声望不少于这个等级的用户发布的帖子永远不会被标记为垃圾信息.</p>
             <div class="form-group">
                <label for="akismetFlagReporting">Flagging Minimum Reputation</label>
                <input placeholder="5" type="text" class="form-control" id="akismetFlagReporting" name="akismetFlagReporting"/>
             </div>
-            <p class="help-block">Allow users with minimum reputation of X to submit posts to Akismet as spam via flagging (leave blank to disable)</p>
+            <p class="help-block">允许用户通过标记向Akismet报告垃圾帖子所需要的最小声望值 (留空关闭)</p>
             <hr />
             <div class="checkbox">
                <label class="section-title">
                <input data-toggle-target="#honeypotApiKey" type="checkbox" id="honeypotEnabled" name="honeypotEnabled"/> Enable Honeypot
                </label>
             </div>
-            <p class="help-block">To check every user registration. Get yours from
-               <a target="_blank" href="http://www.projecthoneypot.org/">projecthoneypot.org</a>
+            <p class="help-block">要检查用户的每一次注册. 从
+               <a target="_blank" href="http://www.projecthoneypot.org/">projecthoneypot.org</a> 获得
             </p>
             <div class="form-group">
                <label for="honeypotApiKey">Honeypot API Key</label>
-               <input placeholder="Honeypot API Key here" type="text" class="form-control" id="honeypotApiKey" name="honeypotApiKey"/>
+               <input placeholder="输入 Honeypot API Key" type="text" class="form-control" id="honeypotApiKey" name="honeypotApiKey"/>
             </div>
             <hr />
             <div class="checkbox">
                <label class="section-title">
-               <input data-toggle-target="#recaptchaPublicKey,#recaptchaPrivateKey,#loginRecaptchaEnabled" type="checkbox" id="recaptchaEnabled" name="recaptchaEnabled"/> Enable Re-Captcha
+               <input data-toggle-target="#recaptchaPublicKey,#recaptchaPrivateKey,#loginRecaptchaEnabled" type="checkbox" id="recaptchaEnabled" name="recaptchaEnabled"/> 启用 Re-Captcha
                </label>
             </div>
-            <p class="help-block">To check every user registration. You need a private and a public key, get yours from
-               <a target="_blank" href="http://www.google.com/recaptcha">google.com/recaptcha</a>
+            <p class="help-block">要检查用户的每一次注册. 你需要有个公钥和私钥, 从
+               <a target="_blank" href="http://www.google.com/recaptcha">google.com/recaptcha</a> 获得
             </p>
             <div class="form-inline">
                <div class="form-group" style="width:45%;">
-                  <label for="recaptchaPublicKey">Re-Captcha Public API Key</label>
+                  <label for="recaptchaPublicKey">Re-Captcha 公钥</label>
                   <input placeholder="Public API Key here" type="text" class="recaptchaKey form-control" id="recaptchaPublicKey" name="recaptchaPublicKey"/>
                </div>
                <div class="form-group" style="width:45%;">
-                  <label for="recaptchaPrivateKey">Re-Captcha Private API Key</label>
+                  <label for="recaptchaPrivateKey">Re-Captcha 私钥</label>
                   <input placeholder="Private (Secret) API Key here" type="text" class="recaptchaKey form-control" id="recaptchaPrivateKey" name="recaptchaPrivateKey"/>
                </div>
             </div>
             <p class="help-block">
-               Keep your private key private
+               不要泄露你的私钥
             </p>
             <div class="checkbox">
                <label>
                <input type="checkbox" id="loginRecaptchaEnabled" name="loginRecaptchaEnabled"/>
-                <small>Enable Re-Captcha on login page as well</small>
+                <small>在登录页面也启用 Re-Captcha</small>
                </label>
             </div>
             <hr />
@@ -82,18 +82,18 @@
                </label>
             </div>
             <p class="help-block">
-               To report a user you need an API key, get yours from <a target="_blank" href="https://www.stopforumspam.com/keys">stopforumspam.com/keys</a>
+               要举报用户你需要 API key, 从 <a target="_blank" href="https://www.stopforumspam.com/keys">stopforumspam.com/keys</a> 获得
             </p>
             <div class="form-group" style="width:45%;">
-               <label for="stopforumspamApiKey">StopForumSpam API Key</label>
+               <label for="stopforumspamApiKey">输入 StopForumSpam API</label>
                <input placeholder="API key here" type="text" class="stopforumspamApiKey form-control" id="stopforumspamApiKey" name="stopforumspamApiKey"/>
             </div>
          </div>
       </div>
       <hr/>
-      <button class="btn btn-lg btn-primary" id="save" type="button">Save</button>
+      <button class="btn btn-lg btn-primary" id="save" type="button">保存</button>
       <p class="help-block">
-         This plugin uses
+         这个插件使用
          <a target="_blank" href="https://github.com/julianlam/project-honeypot">project-honeypot</a>,
          <a target="_blank" href="https://github.com/deltreey/stopforumspam">stopforumspam</a>,
          <a target="_blank" href="https://github.com/oozcitak/akismet-js">akismet-js</a>,
@@ -151,8 +151,8 @@
            app.alert({
              type: 'success',
              alert_id: nbbId,
-             title: 'Reload Required',
-             message: 'Please reload your NodeBB to have your changes take effect',
+             title: '需要重载',
+             message: '请重载你的NodeBB让更改生效',
              clickfn: function() {
                socket.emit('admin.reload');
              }

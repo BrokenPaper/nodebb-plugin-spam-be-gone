@@ -110,7 +110,7 @@ Plugin.load = function (params, callback) {
 Plugin.render = function (req, res) {
 	res.render('admin/plugins/' + pluginData.nbbId, pluginData || {});
 };
-
+// 暂时没用sfs,所以不改了
 Plugin.report = function (req, res) {
 
 	if (!pluginSettings.stopforumspamEnabled) {
@@ -153,11 +153,10 @@ Plugin.report = function (req, res) {
 			});
 	});
 };
-
 Plugin.addCaptcha = function (data, callback) {
 	if (recaptchaArgs) {
 		var captcha = {
-			label: 'Captcha',
+			label: '验证码',
 			html: '' +
 			'<div id="' + pluginData.nbbId + '-recaptcha-target"></div>' +
 			'<script id="' + pluginData.nbbId + '-recaptcha-script">\n\n' +
@@ -275,7 +274,7 @@ Plugin.checkReply = function (data, options, callback) {
 			}
 
 			winston.verbose('[plugins/' + pluginData.nbbId + '] Post "' + akismetData.comment_content + '" by uid: ' + data.uid + ' username: ' + userData.username + '@' + data.req.ip + ' was flagged as spam and rejected.');
-			next(new Error('Post content was flagged as spam by Akismet.com'));
+			next(new Error('发帖内容被 Akismet.com 标记为广告'));
 		}
 	], callback);
 };
@@ -443,7 +442,7 @@ Plugin._recaptchaCheck = function (req, res, userData, next) {
 			req.body['g-recaptcha-response'],
 			function (err) {
 				if (err) {
-					var message = err.Error || 'Captcha not verified, are you a robot?';
+					var message = err.Error || '验证码错误, 如果重复出错请刷新页面。';
 					winston.verbose('[plugins/' + pluginData.nbbId + '] ' + message);
 					next(new Error(message), userData);
 				} else {
